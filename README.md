@@ -3,15 +3,16 @@ binomen
 
 
 
-[![Build Status](https://api.travis-ci.org/ropensci/binomen.png)](https://travis-ci.org/ropensci/binomen)
-[![codecov.io](http://codecov.io/github/ropensci/binomen/coverage.svg?branch=master)](http://codecov.io/github/ropensci/binomen?branch=master)
-[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/binomen?color=E664A4)](https://github.com/metacran/cranlogs.app)
+[![Build Status](https://travis-ci.org/ropensci/binomen.svg?branch=master)](https://travis-ci.org/ropensci/binomen)
+[![codecov](https://codecov.io/gh/ropensci/binomen/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/binomen)
+[![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/binomen?color=E664A4)](https://github.com/metacran/cranlogs.app)
+[![cran version](https://www.r-pkg.org/badges/version/binomen)](https://cran.r-project.org/package=binomen)
 
 `binomen` provides various taxonomic classes for defining a single taxon, multiple taxa, and a taxonomic data.frame
 
 It is designed as a companion to [taxize](https://github.com/ropensci/taxize), where you can get taxonomic data on taxonomic names from the web.
 
-The classes (S3):
+### classes (S3)
 
 * `taxon`
 * `taxonref`
@@ -19,7 +20,7 @@ The classes (S3):
 * `binomial`
 * `grouping` (i.e., classification - used different term to avoid conflict with classification in `taxize`)
 
-The verbs:
+### verbs
 
 * `gethier()` - get hierarchy from a `taxon` class
 * `scatter()` - make each row in taxonomic data.frame (`taxondf`) a separate `taxon` object within a single `taxa` object
@@ -34,6 +35,15 @@ The verbs:
 * `id()` - get the reference uri for each `taxonref` object
 
 ## Installation
+
+Stable CRAN version
+
+
+```r
+install.packages("binomen")
+```
+
+Development GitHub version
 
 
 ```r
@@ -334,4 +344,4 @@ See [our issue tracker](https://github.com/ropensci/binomen/issues) to see what 
 * Get citation information for `binomen` in R doing `citation(package = 'binomen')`
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-[![ropensci](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![ropensci](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
